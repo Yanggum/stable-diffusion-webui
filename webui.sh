@@ -11,7 +11,7 @@ ENV_MODIFED_FILE=".env_updated"
 if [[ -f $ENV_MODIFED_FILE ]]; then ENV_MODIFIED_CACHED=$(<${ENV_MODIFED_FILE}); else ENV_MODIFIED_CACHED=0; fi
 
 # Set conda path if it is not already in default environment
-custom_conda_path=
+custom_conda_path=root/miniconda3/
 
 # Allow setting custom path via file to allow updates of this script without undoing custom path
 if [ -f custom-conda-path.txt ]; then
