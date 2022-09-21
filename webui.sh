@@ -51,9 +51,9 @@ fi
 conda activate $ENV_NAME
 conda info | grep active
 
-if [ ! -e "models/ldm/stable-diffusion-v1/model.ckpt" ]; then
-    echo "Your model file does not exist! Place it in 'models/ldm/stable-diffusion-v1' with the name 'model.ckpt'."
-    exit 1
-fi
+#if [ ! -e "models/ldm/stable-diffusion-v1/model.ckpt" ]; then
+#    echo "Your model file does not exist! Place it in 'models/ldm/stable-diffusion-v1' with the name 'model.ckpt'."
+#    exit 1
+#fi
 
 python scripts/relauncher.py
